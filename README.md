@@ -111,13 +111,25 @@
 ## 10. Problems & Improvements
 
 - **BLIP2 프롬프트 품질 문제**  
-  → 부정확하거나 반복적인 응답 발생, 감정 단어 대신 설명 출력  
+  → 부정확하거나 반복적인 응답 발생, 감정 단어 대신 설명 출력
+
+<p align="center">
+  <img src="prompt problem.png" alt="prompt problem" width="100%"/>
+</p>
+
 - **데이터 불균형**  
-  → 소수 클래스 학습 불안정, 향후 `class_weight` 적용 예정  
+  → 소수 클래스 학습 불안정, 향후 `class_weight` 적용 예정
+
+  <p align="center">
+  <img src="data imbalance.png" alt="data imbalance" width="100%"/>
+</p>
+
 - **Augmentation 실험의 일관성 부족**  
   → crop 제외, flip 위주로 통일. Crop 비율 조정 실험 필요  
-- **복잡한 Attention 구조의 과적합**  
-  → Cross-Attention 구조는 소수 클래스에서 성능 저하 유발 가능성 있음
+
+<p align="center">
+  <img src="crop.png" alt="crop" width="100%"/>
+</p>
 
 ---
 
