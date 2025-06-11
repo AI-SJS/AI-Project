@@ -14,7 +14,7 @@
 정적 이미지에서의 감정 인식 성능을 향상시키는 멀티모달 구조를 제안합니다.
 
 <p align="center">
-  <img src="motivation.png" alt="motivation" width="300"/>
+  <img src="motivation.png" alt="motivation" width="100%"/>
 </p>
 
 ---
@@ -23,6 +23,10 @@
 
 - VLLMs는 감정 이해에 더 풍부한 문맥 정보를 제공 (Yang et al., 2024)  
 - LLaVA 및 QFormer 등을 활용한 이미지-텍스트 융합 기반 감정 추론 사례 소개
+
+<p align="center">
+  <img src="Related work.png" alt="Related work" width="100%"/>
+</p>
 
 ---
 
@@ -35,6 +39,11 @@
 5. 다양한 MLP 및 Attention 구조 학습  
 6. Flask 웹으로 결과 시각화
 
+<p align="center">
+  <img src="flowchart.png" alt="flowchart" width="100%"/>
+</p>
+
+
 ---
 
 ## 4. Dataset
@@ -43,6 +52,15 @@
 - 총 이미지 수: 15,339장  
   (Train: 9,816 / Val: 2,455 / Test: 3,068)  
 - 클래스 불균형 존재 → 일부 클래스에 augmentation 적용 (flip, rotate 등)
+
+<p align="center">
+  <img src="dataset.png" alt="dataset" width="100%"/>
+</p>
+
+<p align="center">
+  <img src="labelimage.png" alt="labelimage" width="100%"/>
+</p>
+
 
 ---
 
