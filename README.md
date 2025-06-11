@@ -21,7 +21,10 @@
 
 ## 2. Related Work
 
-- VLLMs는 감정 이해에 더 풍부한 문맥 정보를 제공 (Yang et al., 2024)  
+- [Yang et al. (2024)](https://arxiv.org/abs/2404.07078),  
+  *VLLMs Provide Better Context for Emotion Understanding Through Common Sense Reasoning*  
+  → 이미지 속 인물의 감정을 상식 기반으로 이해하는 데 있어 VLM의 효과를 강조한 논문
+
 - LLaVA 및 QFormer 등을 활용한 이미지-텍스트 융합 기반 감정 추론 사례 소개
 
 <p align="center">
