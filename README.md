@@ -13,6 +13,10 @@
 본 프로젝트에서는 VLM(Vision-Language Model)을 활용해 자연어 기반 설명을 CNN feature와 결합하여  
 정적 이미지에서의 감정 인식 성능을 향상시키는 멀티모달 구조를 제안합니다.
 
+<p align="center">
+  <img src="motivation.png" alt="motivation" width="300"/>
+</p>
+
 ---
 
 ## 2. Related Work
