@@ -79,6 +79,10 @@
   (Prompt 예시: *“What emotion is the person showing?”*)  
 - CLIP: 생성된 문장을 768차원 텍스트 임베딩으로 변환
 
+<p align="center">
+  <img src="vlm.png" alt="vlm" width="100%"/>
+</p>
+
 ---
 
 ## 8. Feature Extraction & Fusion
@@ -86,6 +90,10 @@
 - CNN: 1024차원 feature 추출  
 - BLIP2 + CLIP: 768차원 텍스트 임베딩  
 - 두 feature를 concat 후 L2 정규화하여 MLP 입력으로 사용
+
+<p align="center">
+  <img src="feature fusion.png" alt="feature fusion" width="100%"/>
+</p>
 
 ---
 
