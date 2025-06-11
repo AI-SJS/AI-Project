@@ -1,7 +1,6 @@
 # AI-Project
 
-# CNN vs VLM 기반 멀티모달 얼굴 감정 인식 비교 연구
-
+# 멀티모달과 단일 CNN 모델의 얼굴 감정 인식 성능 비교 연구
 > 얼굴 이미지 기반 감정 인식에서 단일 CNN과 멀티모달 구조의 성능을 비교한 AI 프로젝트입니다.
 
 ---
@@ -69,10 +68,18 @@
 
 ## 5. CNN (Baseline)
 
-- 모델: DenseNet121  
-- Augmentation: Horizontal Flip  
-- Hyperparameter: Batch size=64, Epochs=30, LR=0.001  
-- 성능: Accuracy = 0.7697, F1 = 0.7666
+- 모델 후보: VGG16, ResNet18, DenseNet121
+- 데이터셋: RAF-DB  
+- Hyperparameter: Batch size=64, Epochs=30, LR=0.001, EarlyStopping(patience=5)
+
+| Model     | Accuracy | F1-score |
+|-----------|----------|----------|
+| VGG16     | 0.6680   | 0.6558  |
+| ResNet18  | 0.7462   | 0.7348   |
+| **DenseNet121** | **0.7697**   | **0.7666** |
+
+>  **DenseNet121**은 정확도와 F1-score에서 가장 우수한 성능을 보여,  
+> 본 프로젝트의 최종 baseline CNN 모델로 선정되었습니다.
 
 ---
 
