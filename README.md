@@ -99,7 +99,7 @@
 </p>
 ---
 
-## 8. Feature Extraction & Fusion
+## 7. Feature Extraction & Fusion
 
 - CNN: 1024차원 feature 추출  
 - BLIP2 + CLIP: 768차원 텍스트 임베딩  
@@ -111,7 +111,7 @@
 
 ---
 
-## 9. MLP Training & Results
+## 8. MLP Training & Results
 
 멀티모달 feature(CNN + CLIP)를 결합한 후 다양한 MLP 구조를 실험하였습니다.  
 특히 Attention 계열 구조를 적용하여 정보 간 상호작용을 학습하도록 설계하였으며,  
@@ -130,7 +130,7 @@
 
 ---
 
-## 10. Best MLP Results (F1-score per class)
+## 9. Best MLP Results (F1-score per class)
 
 아래는 CNN 단일모델과 Best MLP (MLP + Attention) 구조 간의  
 클래스별 F1-score 비교 결과입니다.
@@ -149,7 +149,7 @@
 > 특히 `fear` 클래스에서 **35% 향상**이라는 큰 개선 효과가 나타났습니다.
 > 이는 Attention이 미묘한 차이를 정교하게 반영하고 학습할 수 있다는 것을 보여줍니다.
 
-## 11. Final Comparison – 단일 CNN 모델 vs 멀티모달 구조
+## 10. Final Comparison – 단일 CNN 모델 vs 멀티모달 구조
 
 | 모델         | Test Accuracy | CNN 대비 향상률 |
 |--------------|----------------|------------------|
@@ -166,7 +166,7 @@
 - 7.3% 정확도 향상은 실질적 성능 향상으로 해석 가능
 - 단일모델 대비, 멀티모달 구조는 **정보를 더 풍부하고 정교하게 표현**할 수 있음을 실험적으로 입증
 
-## 10. Problems & Improvements
+## 11. Problems & Improvements
 
 - **BLIP2 프롬프트 품질 문제**  
   → 부정확하거나 반복적인 응답 발생, 감정 단어 대신 설명 출력
@@ -191,7 +191,7 @@
 
 ---
 
-## 11. Flask
+## 12. Flask
 
 - 사용자 로그인 및 이미지 업로드  
 - 감정 예측 결과 + 랜덤 피드백 코멘트 출력  
