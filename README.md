@@ -86,6 +86,11 @@
   <img src="vlm.png" alt="vlm" width="100%"/>
 </p>
 
+- Prompt 예시: *“What emotion is the person showing?”
+- Prompt 결과
+<p align="center">
+  <img src="blip2result.png" alt="blip2result" width="100%"/>
+</p>
 ---
 
 ## 8. Feature Extraction & Fusion
