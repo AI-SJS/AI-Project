@@ -12,9 +12,8 @@
 본 프로젝트에서는 VLM(Vision-Language Model)을 활용해 자연어 기반 설명을 CNN feature와 결합하여  
 정적 이미지에서의 감정 인식 성능을 향상시키는 멀티모달 구조를 제안합니다.
 
-<p align="center">
-  <img src="motivation.png" alt="motivation" width="100%"/>
-</p>
+![motivation](https://github.com/user-attachments/assets/c084efaa-768f-42bf-b056-b6b513e8df5b)
+
 
 ---
 
@@ -26,9 +25,8 @@
 
 - LLaVA 및 QFormer 등을 활용한 이미지-텍스트 융합 기반 감정 추론 사례 소개
 
-<p align="center">
-  <img src="Related work.png" alt="Related work" width="100%"/>
-</p>
+![Related work](https://github.com/user-attachments/assets/318c6d80-a61e-4843-b648-e00ae1f70c61)
+
 
 ---
 
@@ -41,9 +39,8 @@
 5. 다양한 MLP 및 Attention 구조 학습  
 6. Flask 웹으로 결과 시각화
 
-<p align="center">
-  <img src="flowchart.png" alt="flowchart" width="100%"/>
-</p>
+<img width="895" alt="flowchart" src="https://github.com/user-attachments/assets/b8a35308-2957-45b8-aff3-f09582816e47" />
+
 
 
 ---
@@ -55,13 +52,11 @@
   (Train: 9,816 / Val: 2,455 / Test: 3,068)  
 - 클래스 불균형 존재 → 일부 클래스에 augmentation 적용 (flip, rotate 등)
 
-<p align="center">
-  <img src="dataset.png" alt="dataset" width="100%"/>
-</p>
+![dataset](https://github.com/user-attachments/assets/08d8a8fd-2b38-4061-b150-e101d76810db)
 
-<p align="center">
-  <img src="labelimage.png" alt="labelimage" width="100%"/>
-</p>
+
+![labelimage](https://github.com/user-attachments/assets/1218a1e0-f0be-4aec-a193-09426093399b)
+
 
 
 ---
@@ -89,14 +84,12 @@
   (Prompt 예시: *“What emotion is the person showing?”*)  
 - CLIP: 생성된 문장을 768차원 텍스트 임베딩으로 변환
 
-<p align="center">
-  <img src="vlm.png" alt="vlm" width="100%"/>
-</p>
+<img width="911" alt="vlm" src="https://github.com/user-attachments/assets/acd08740-e1c4-4461-9c79-568d50617702" />
+
 
 - Prompt 결과
-<p align="center">
-  <img src="blip2result.png" alt="blip2result" width="100%"/>
-</p>
+![blip2result](https://github.com/user-attachments/assets/71be85a9-183f-4e13-9425-35717709154f)
+
 ---
 
 ## 7. Feature Extraction & Fusion
@@ -105,9 +98,8 @@
 - BLIP2 + CLIP: 768차원 텍스트 임베딩  
 - 두 feature를 concat 후 L2 정규화하여 MLP 입력으로 사용
 
-<p align="center">
-  <img src="feature fusion.png" alt="feature fusion" width="100%"/>
-</p>
+<img width="997" alt="feature fusion" src="https://github.com/user-attachments/assets/27142e39-9960-486f-a911-bcbf6a0c2ed5" />
+
 
 ---
 
@@ -171,23 +163,20 @@
 - **BLIP2 프롬프트 품질 문제**  
   → 부정확하거나 반복적인 응답 발생, 감정 단어 대신 설명 출력
 
-<p align="center">
-  <img src="prompt problem.png" alt="prompt problem" width="100%"/>
-</p>
+<img width="1028" alt="prompt problem" src="https://github.com/user-attachments/assets/13f8f351-9a91-4b10-9e0e-107afd693d5f" />
+
 
 - **데이터 불균형**  
   → 소수 클래스 학습 불안정, 향후 `class_weight` 적용 예정
 
-  <p align="center">
-  <img src="data imbalance.png" alt="data imbalance" width="100%"/>
-</p>
+ <img width="646" alt="data imbalance" src="https://github.com/user-attachments/assets/f273391a-78cb-4b5a-8b03-3ad1e1883508" />
+
 
 - **Augmentation 실험의 일관성 부족**  
   → crop 제외, flip 위주로 통일. Crop 비율 조정 실험 필요  
 
-<p align="center">
-  <img src="crop.png" alt="crop" width="100%"/>
-</p>
+<img width="992" alt="crop" src="https://github.com/user-attachments/assets/f9408c4d-062d-40d8-a399-6a064d43a145" />
+
 
 ---
 
