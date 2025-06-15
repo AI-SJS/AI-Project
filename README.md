@@ -13,10 +13,11 @@
 
 ## 프로젝트
 - 🔗 [AI 프로젝트 심화1](https://github.com/AI-SJS/AI-Project/tree/main/AI%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%20%EC%8B%AC%ED%99%941)  
-  → **멀티모달과 단일 CNN 모델의 얼굴 감정 인식 성능 비교 연구**
+  → **R2Gen과 A3Net을 활용한 MIMIC-CXR 기반 의료 리포트 생성 성능 비교**
 
 - 🔗 [AI 프로젝트1](https://github.com/AI-SJS/AI-Project/tree/main/AI%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B81)  
-  → **R2Gen과 A3Net을 활용한 MIMIC-CXR 기반 의료 리포트 생성 성능 비교**
+  → **멀티모달과 단일 CNN 모델의 얼굴 감정 인식 성능 비교 연구**
+
 
 ---
 
