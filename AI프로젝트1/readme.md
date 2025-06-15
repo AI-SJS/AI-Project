@@ -189,4 +189,9 @@
 - 관리자 페이지에서 전체 예측 기록 조회 및 삭제  
 - 외부 접근은 `ngrok`을 통해 웹 공유 가능
 
+## 플라스크 시연영상
+- ![flask1](https://github.com/user-attachments/assets/7a5a066f-9aa8-46c8-84a0-f2a2f5c43d6f)
+
+- ![flask2](https://github.com/user-attachments/assets/9f248cf9-2394-4f63-9bfd-4fa720d868b6)
+
 ---
