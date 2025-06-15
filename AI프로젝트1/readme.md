@@ -47,7 +47,8 @@
 
 ## 4. Dataset
 
-- **RAF-DB** (Real-world Affective Faces Database)  
+- **RAF-DB** (Real-world Affective Faces Database)
+- https://www.kaggle.com/datasets/shuvoalok/raf-db-dataset 
 - 총 이미지 수: 15,339장  
   (Train: 9,816 / Val: 2,455 / Test: 3,068)  
 - 클래스 불균형 존재 → 일부 클래스에 augmentation 적용 (flip, rotate 등)
